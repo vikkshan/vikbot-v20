@@ -3,7 +3,7 @@ const chalk = require('chalk');
 
 module.exports = async (client) => {
   const activities = [
-        { name: `code written by Vik`, type: 2 }, // LISTENING
+        { name: `Vik`, type: 2 }, // LISTENING
     { name: `with Ari`, type: 0 }, // PLAYING
     { name: `${client.users.cache.size} aliens`, type: 2 }, // LISTENING
         { name: `in ${client.guilds.cache.size} Servers!!`, type: 0 }, // PLAYING
