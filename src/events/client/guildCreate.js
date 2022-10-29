@@ -66,7 +66,7 @@ module.exports = async (client, guild) => {
             image: "https://cdn.discordapp.com/attachments/843487478881976381/874694194474668052/Bot_banner_invite.jpg",
             fields: [{
                 name: "🤔┆Who on mars am I",
-                value: 'I am your free friendly neighborhood bot with which you can run your entire server! With no less than 400+ commands, Consider me a MEE6 but not a bitch XD. I would be glad if you helped me stay up by [buying me a coffee](https://ko-fi.com/vikbot)',
+                value: 'I am your free friendly neighborhood bot with which you can run your entire server! With no less than 400+ commands, Consider me a <@159985870458322944> but not a bitch XD. I would be glad if you helped me stay up by [buying me a coffee](https://ko-fi.com/vikbot)',
                 inline: false,
             },         
             {
