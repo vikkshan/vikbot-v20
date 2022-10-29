@@ -7,7 +7,7 @@ module.exports = async (client, interaction, args) => {
 
     Schema.findOne({ User: interaction.user.id }, async (err, data) => {
         if (data) {
-            if (!isHexcolor(color)) return client.errNormal({ error: "You did not specify an hex color! Example: #ff0000", type: 'editreply' }, interaction);
+            if (!isHexcolor(color)) return client.errNormal({ error: "You did not specify an hex color! Example: #ff0000. [Click here](https://htmlcolorcodes.com/color-names/) to see a list of all hex colors", type: 'editreply' }, interaction);
 
             data.Color = color;
             data.save();
