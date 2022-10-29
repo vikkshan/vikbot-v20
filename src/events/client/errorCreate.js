@@ -20,7 +20,7 @@ module.exports = (client, err, command, interaction) => {
         .addField(`📃┇Stack error`, `\`\`\`${err.stack.substr(0, 1018)}\`\`\``)
         .setColor(client.config.colors.normal)
     errorlog.send({
-        username: `Bot errors`,
+        username: `Vikky Errors`,
         embeds: [embed],
 
     }).catch(error => { console.log(error) })
@@ -35,7 +35,7 @@ module.exports = (client, err, command, interaction) => {
 
     client.embed({
         title: `${client.emotes.normal.error}・Error`,
-        desc: `There was an error executing this command`,
+        desc: `Huh Oh! This command is making my fans real propellers, there was an error executing this command`,
         color: client.config.colors.error,
         fields: [
             {
@@ -45,7 +45,7 @@ module.exports = (client, err, command, interaction) => {
             },
             {
                 name: `What now?`,
-                value: `You can contact the developers by joining the support server`,
+                value: `You can contact the developers creating a ticket in the support server`,
                 inline: true,
             }
         ],
@@ -54,7 +54,7 @@ module.exports = (client, err, command, interaction) => {
     }, interaction).catch(() => {
         client.embed({
             title: `${client.emotes.normal.error}・Error`,
-            desc: `There was an error executing this command`,
+            desc: `Tuh Oh! This command is making my fans real propellers, there was an error executing this command`,
             color: client.config.colors.error,
             fields: [
                 {
@@ -64,7 +64,7 @@ module.exports = (client, err, command, interaction) => {
                 },
                 {
                     name: `What now?`,
-                    value: `You can contact the developers by joining the support server`,
+                    value: `You can contact the developers by creating a ticket in the support server`,
                     inline: true,
                 }
             ],

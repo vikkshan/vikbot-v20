@@ -2,7 +2,7 @@ const express = require('express')
 const app = express();
 const port = 3000;
 app.get('/', (req, res) => {
-  res.send('Hello, I am Vik!')
+  res.send('Hello, I am your free friendly neighborhood bot with which you can run your entire server! With no less than 400+ commands, Consider me a MEE6 but not a bitch XD. I would be glad if you helped me stay up by [buying me a coffee](https://ko-fi.com/vikbot)!')
 })
 app.listen(port, () => {
   console.log(`Vik is listening to http://localhost:${port}`)

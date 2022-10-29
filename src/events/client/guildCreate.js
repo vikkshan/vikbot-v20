@@ -62,7 +62,7 @@ module.exports = async (client, guild) => {
             );
 
         client.embed({
-            title: "Thanks for inviting the Vikky Chan!",
+            title: "Thanks for inviting Vikky Chan!",
             image: "https://cdn.discordapp.com/attachments/843487478881976381/874694194474668052/Bot_banner_invite.jpg",
             fields: [{
                 name: "🤔┆Who on mars am I",
