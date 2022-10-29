@@ -5,7 +5,7 @@ module.exports = async (client, interaction, args) => {
         .addComponents(
             new Discord.MessageSelectMenu()
                 .setCustomId('Bot-linkspanel')
-                .setPlaceholder('❌┆Nothing selected')
+                .setPlaceholder('🍥┆Make a selection')
                 .addOptions([
                     {
                         label: `Support server`,
@@ -14,8 +14,8 @@ module.exports = async (client, interaction, args) => {
                         value: "support-linkspanel",
                     },
                     {
-                        label: `Invite Bot`,
-                        description: `Invite Bot to your server`,
+                        label: `Invite Vikky`,
+                        description: `Invite Vikky to your server`,
                         emoji: "📨",
                         value: "invite-linkspanel",
                     },
@@ -36,7 +36,7 @@ module.exports = async (client, interaction, args) => {
 
     client.embed({
         title: `🔗・Links`,
-        desc: `Get access to all Bot links! Choose the link you need in the menu below`,
+        desc: `Get access to all of Vikky's links! Choose the link you need in the menu below`,
         image: "https://cdn.discordapp.com/attachments/843487478881976381/874694194474668052/Bot_banner_invite.jpg",
         components: [row],
         type: 'editreply'
