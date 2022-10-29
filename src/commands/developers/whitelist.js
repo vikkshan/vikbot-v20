@@ -6,7 +6,7 @@ module.exports = async (client, interaction, args) => {
     const type = interaction.options.getString('type');
     const guild = interaction.options.getString('guild');
 
-    if (interaction.author.id === "534398298002292739") {
+    if (interaction.author.id === "784649693363306518") {
         if (type == "add") {
             Schema.findOne({ Guild: guild }, async (err, data) => {
                 if (data) {
@@ -40,7 +40,7 @@ module.exports = async (client, interaction, args) => {
     }
     else {
         client.errNormal({
-            error: "Only the Bot CEO are allowed to do this",
+            error: "Only the Vikshan is allowed to do this",
             type: 'editreply'
         }, interaction);
     }

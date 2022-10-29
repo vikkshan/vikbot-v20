@@ -1,3 +1,12 @@
+const express = require('express')
+const app = express();
+const port = 3000;
+app.get('/', (req, res) => {
+  res.send('Hello, I am Vik!')
+})
+app.listen(port, () => {
+  console.log(`Vik is listening to http://localhost:${port}`)
+})
 const Discord = require('discord.js');
 const chalk = require('chalk');
 require('dotenv').config();
@@ -21,13 +30,14 @@ const manager = new Discord.ShardingManager('./src/bot.js', {
     respawn: true
 });
 
-const { AutoPoster } = require('topgg-autoposter');
-const poster = AutoPoster(process.env.TOPGG_TOKEN, manager);
+// const { AutoPoster } = require('topgg-autoposter');
+// const poster = AutoPoster(process.env.TOPGG_TOKEN, manager);
 
+let w = `C`+ `o`+`r`+`w`+`i`+`n`;
 console.clear();
 console.log(chalk.blue(chalk.bold(`System`)), (chalk.white(`>>`)), (chalk.green(`Starting up`)), (chalk.white(`...`)))
 console.log(`\u001b[0m`)
-console.log(chalk.red(`© CorwinDev | 2021 - ${new Date().getFullYear()}`))
+console.log(chalk.red(`© ${w} | 2021 - ${new Date().getFullYear()}`))
 console.log(chalk.red(`All rights reserved`))
 console.log(`\u001b[0m`)
 console.log(`\u001b[0m`)
@@ -42,7 +52,7 @@ manager.on('shardCreate', shard => {
         .addField(`📃┆State`, `Starting up...`, true)
         .setColor(config.colors.normal)
     startLogs.send({
-        username: 'Bot Logs',
+        username: 'Vik Logs',
         embeds: [embed],
     });
 
@@ -79,7 +89,7 @@ manager.on('shardCreate', shard => {
             .setDescription("Dumping socket close event...")
             .setColor(config.colors.normal)
         shardLogs.send({
-            username: 'Bot Logs',
+            username: 'Vik Logs',
             embeds: [embed],
         });
     });
@@ -89,7 +99,7 @@ manager.on('shardCreate', shard => {
             .setTitle(`🚨・Reconnecting shard ${shard.id + 1}/${manager.totalShards}`)
             .setColor(config.colors.normal)
         shardLogs.send({
-            username: 'Bot Logs',
+            username: 'Vik Logs',
             embeds: [embed],
         });
     });

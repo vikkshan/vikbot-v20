@@ -50,7 +50,7 @@ module.exports = async (client, interaction, args) => {
                 .setColor(client.config.colors.normal)
                 .setTimestamp();
             webhookClientLogs.send({
-                username: 'Bot Logs',
+                username: 'Vik Logs',
                 embeds: [embed2],
             });
         }

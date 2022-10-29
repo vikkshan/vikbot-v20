@@ -33,7 +33,7 @@ module.exports = async (client, guild) => {
                     .setThumbnail("https://cdn.discordapp.com/attachments/843487478881976381/852419422392156210/BotPartyEmote.png")
                     .setColor(client.config.colors.normal)
                 webhookClient.send({
-                    username: 'Bot Logs',
+                    username: 'Server Add',
                     avatarURL: client.user.avatarURL(),
                     embeds: [embed],
                 });
@@ -62,26 +62,26 @@ module.exports = async (client, guild) => {
             );
 
         client.embed({
-            title: "Thanks for inviting the bot!",
+            title: "Thanks for inviting the Vikky Chan!",
             image: "https://cdn.discordapp.com/attachments/843487478881976381/874694194474668052/Bot_banner_invite.jpg",
             fields: [{
-                name: "📢┆Alert!",
-                value: 'After more than 1 year we decided to stop Bot on April 15th, for more information go to [this server](https://discord.gg/techpoint)',
+                name: "🤔┆Who on mars am I",
+                value: 'I am your free friendly neighborhood bot with which you can run your entire server! With no less than 400+ commands, Consider me a MEE6 but not a bitch XD. I would be glad if you helped me stay up by [buying me a coffee](https://ko-fi.com/vikbot)',
                 inline: false,
-            },
+            },         
             {
                 name: "❓┆How to setup?",
-                value: 'The default prefix = \`/\` \nTo run setups with Bot run \`/setup\`',
+                value: 'The default prefix = \`/\` \nTo run setups with Vikky run \`/setup\` \n⚠️Please keep my permissions as they are, I need admin perms for tickets to work',
                 inline: false,
-            },
+            },         
             {
                 name: "☎️┆I need help what now?",
-                value: `You can DM <@534398298002292739> for support or joining the [[Support server]](${client.config.discord.serverInvite})`,
+                value: `You can DM <@929835843479302204> for support or creating a support ticket at the [[Support server]](${client.config.discord.serverInvite})`,
                 inline: false,
             },
             {
-                name: "💻┆What are the commands?",
-                value: 'See that list of commands by doing \`/help\`',
+                name: "💻┆What are my commands?",
+                value: 'See the list of commands by doing \`/help\` or just \`/\`',
                 inline: false,
             },
             {

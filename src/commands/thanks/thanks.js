@@ -8,7 +8,7 @@ module.exports = async (client, interaction, args) => {
     const target = interaction.options.getUser('user');
     if (!target) return client.errUsage({ usage: "thanks [mention user]", type: 'editreply' }, interaction);
 
-    if (target.id === interaction.user.id) return client.errNormal({ error: `You cannot thank yourself!`, type: 'editreply' }, interaction);
+    if (target.id === interaction.user.id) return client.errNormal({ error: `You cannot thank yourself silly!`, type: 'editreply' }, interaction);
 
     thanksAuthor.findOne({ User: target.id, Author: interaction.user.id }, async (err, data) => {
         if (data) {

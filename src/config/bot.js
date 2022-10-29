@@ -1,16 +1,16 @@
 module.exports = {
     colors: {
-        succes: '#57F287',
+        success: '#57F287',
         error: "#ED4245",
         normal: "#5865F2"
     },
 
     discord: {
-        id: "",
-        prefix: 'd!',
-        footer: `© Bot 2021 - ${new Date().getFullYear()}`, 
-        botInvite: "https://discord.com/oauth2/authorize?&client_id=QQQQQQQQQQQQ&scope=applications.commands+bot&permissions=8",
-        serverInvite: "https://discord.gg/QQQQQQQQ",
+        id: "1009149789914546287",
+        prefix: '$',
+        footer: `©  Vikshan ${new Date().getFullYear()}`, 
+        botInvite: "https://discord.com/api/oauth2/authorize?client_id=1009149789914546287&permissions=13744537140328&scope=applications.commands%20bot",
+        serverInvite: "https://discord.gg/Dwnf3vQSz4",
     },
 
     wordList: `Airplane
