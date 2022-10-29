@@ -1,6 +1,6 @@
 # [ALL IN ONΞ™](https://tinyurl.com/3jvb65tv)
 ## [YouTube](https://tinyurl.com/3jvb65tv )
-### [Support Server](https://discord.gg/ndfEefv9aw)
+### Create a ticket in [Support Server](https://discord.gg/Dwnf3vQSz4)
 
 # How to setup the bot?
 - Watch YouTube Video: [Click Here](https://youtu.be/ilsrR-uYRoo)
@@ -16,11 +16,11 @@
 
 ### 💕Credit
 - Code By Corwin#0001
-- Modified By Uo#1428
+- Modified By Vikshan
 
 ## ✨ Discord Profile
 <div align="center">
-  <a width="100%" href="https://discord.gg/pXRT2FusPb"  target="_blank">
-    <img align="left" width="100%" style="margin: 0 10px 0 0;" alt=" " src="https://discord.c99.nl/widget/theme-2/784649693363306518.png">
+  <a width="100%" href="https://discord.gg/Dwnf3vQSz4"  target="_blank">
+    <img align="left" width="100%" style="margin: 0 10px 0 0;" alt=" " src="https://discord.c99.nl/widget/theme-2/929835843479302204.png">
   </a>
 </div>
