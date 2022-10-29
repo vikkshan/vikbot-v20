@@ -23,7 +23,7 @@ module.exports = async (client, interaction, args) => {
                 thumbnail: client.user.avatarURL({ size: 1024 }),
                 fields: [{
                     name: "<:uo_info:1015553303242883112> ┆ Information",
-                    value: `Bot is a bot with which you can run your entire server! With no less than 400+ commands, we have a large bot with many options to improve your server!`,
+                    value: `Hello, I am your free friendly neighborhood bot with which you can run your entire server! With no less than 400+ commands, Consider me a <@159985870458322944> but not a bitch XD. I would be glad if you helped me stay up by [buying me a coffee](https://ko-fi.com/vikbot)!`,
                     inline: false,
                 },
                 {
@@ -43,12 +43,12 @@ module.exports = async (client, interaction, args) => {
                 },
                 {
                     name: "<:blue_crown:1012017210992115812> ┆ Bot owner",
-                    value: `<@!784649693363306518> `,
+                    value: `<@!929835843479302204> `,
                     inline: true,
                 },
                 {
                     name: "<:blue_hammers:1012018248163786763> ┆ Bot developer",
-                    value: `<@!784649693363306518>`,
+                    value: `<@!929835843479302204>`,
                     inline: true,
                 },
                 {
@@ -62,7 +62,7 @@ module.exports = async (client, interaction, args) => {
                     inline: true,
                 },
                 {
-                    name: "<:discord:1012017257158824027> ┆ Servers this shard",
+                    name: "<:discord:1012017257158824027> ┆ Servers in this shard",
                     value: `\`${client.guilds.cache.size}\` servers`,
                     inline: true,
                 },
