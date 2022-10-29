@@ -4,39 +4,39 @@ module.exports = async (client) => {
     client.on('interactionCreate', async (interaction) => {
         if (!interaction.isSelectMenu()) return;
 
-        if (interaction.customId == "Bot-helppanel") {
+        if (interaction.customId == "Vikky-helppanel") {
             if (interaction.values == "invite-Bothelp") {
                 interaction.deferUpdate();
 
                 const row2 = new Discord.MessageActionRow()
                     .addComponents( 
                         new Discord.MessageSelectMenu()
-                            .setCustomId('Bot-helppanel')
-                            .setPlaceholder('❌┆Nothing selected')
+                            .setCustomId('vikky-helppanel')
+                            .setPlaceholder('🍥┆ Please make a selection')
                             .addOptions([
                                 {
                                     label: `Commands`,
                                     description: `Show the commands of Bot!`,
                                     emoji: "💻",
-                                    value: "commands-Bothelp",
+                                    value: "commands-help",
                                 },
                                 {
                                     label: `Invite`,
                                     description: `Invite Bot to your server`,
                                     emoji: "📨",
-                                    value: "invite-Bothelp",
+                                    value: "invite-help",
                                 },
                                 {
                                     label: `Support server`,
                                     description: `Join the suppport server`,
                                     emoji: "❓",
-                                    value: "support-Bothelp",
+                                    value: "support-help",
                                 },
                                 {
                                     label: `Changelogs`,
                                     description: `Show the bot changelogs`,
                                     emoji: "📃",
-                                    value: "changelogs-Bothelp",
+                                    value: "changelogs-help",
                                 },
                             ]),
                     );
@@ -56,8 +56,8 @@ module.exports = async (client) => {
 
                 client.embed({
                     title: `📨・Invite`,
-                    desc: `Make your server even better with Bot!`,
-                    url: "https://discord.gg/pXRT2FusPb",
+                    desc: `Make your server even better with Vikky Chan!`,
+                    url: "https://discord.gg/Dwnf3vQSz4",
                     components: [row2, row],
                     type: 'edit'
                 }, interaction.message)

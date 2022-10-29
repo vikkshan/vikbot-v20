@@ -4,25 +4,25 @@ module.exports = async (client) => {
     client.on('interactionCreate', async (interaction) => {
         if (!interaction.isSelectMenu()) return;
 
-        if (interaction.customId == "Bot-helppanel") {
+        if (interaction.customId == "Vikky-helppanel") {
             if (interaction.values == "changelogs-Bothelp") {
                 interaction.deferUpdate();
 
                 const row = new Discord.MessageActionRow()
                     .addComponents(
                         new Discord.MessageSelectMenu()
-                            .setCustomId('Bot-helppanel')
-                            .setPlaceholder('❌┆Nothing selected')
+                            .setCustomId('Vikky-helppanel')
+                            .setPlaceholder('❌┆ Please make a selection')
                             .addOptions([
                                 {
                                     label: `Commands`,
-                                    description: `Show the commands of Bot!`,
+                                    description: `Show the Vikky's commands!`,
                                     emoji: "💻",
                                     value: "commands-Bothelp",
                                 },
                                 {
                                     label: `Invite`,
-                                    description: `Invite Bot to your server`,
+                                    description: `Invite Vikky to your server`,
                                     emoji: "📨",
                                     value: "invite-Bothelp",
                                 },
