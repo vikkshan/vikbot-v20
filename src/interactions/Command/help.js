@@ -20,7 +20,7 @@ module.exports = {
             .addComponents(
                 new Discord.MessageSelectMenu()
                     .setCustomId('Bot-helppanel')
-                    .setPlaceholder('❌ ┆ Nothing selected')
+                    .setPlaceholder('🍥┆Please make a selection')
                     .addOptions([
                         {
                             label: `Commands`,
