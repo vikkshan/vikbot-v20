@@ -12,7 +12,7 @@ module.exports = async (client) => {
                     .addComponents(
                         new Discord.MessageSelectMenu()
                             .setCustomId('Bot-linkspanel')
-                            .setPlaceholder('🍥┆Please make a selection')
+                            .setPlaceholder('❌┆Nothing selected')
                             .addOptions([
                                 {
                                     label: `Support server`,
@@ -27,10 +27,10 @@ module.exports = async (client) => {
                                     value: "invite-linkspanel",
                                 },
                                 {
-                                    label: `Vote Vikky`,
-                                    description: `Help Vikky grow and vote on [Top.gg](https://top.gg/bot/1009149789914546287)`,
-                                    emoji: "👍",
-                                    value: "vote-linkspanel",
+                                    label: `Invite Bot 2`,
+                                    description: `Invite Bot 2 to your server`,
+                                    emoji: "📕",
+                                    value: "invite2-linkspanel",
                                 },
                                 {
                                     label: `Community Server`,
@@ -52,7 +52,7 @@ module.exports = async (client) => {
 
                         new Discord.MessageButton()
                             .setLabel("Vote Now")
-                            .setURL("https://top.gg/bot/1009149789914546287/vote")
+                            .setURL("https://top.gg/bot/798144456528363550/vote")
                             .setStyle("LINK"),
                     );
 
