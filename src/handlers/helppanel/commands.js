@@ -192,7 +192,7 @@ module.exports = async (client) => {
     client.on('interactionCreate', async (interaction) => {
         if (!interaction.isSelectMenu()) return;
 
-        if (interaction.customId == "Vikky-helppanel") {
+        if (interaction.customId == "Bot-helppanel") {
             if (interaction.values == "commands-Bothelp") {
                 interaction.deferUpdate();
                 let page = 1;
@@ -200,55 +200,55 @@ module.exports = async (client) => {
                 const row = new Discord.MessageActionRow()
                     .addComponents(
                         new Discord.MessageButton()
-                            .setCustomId('Prev')
+                            .setCustomId('helpPrev')
                             .setEmoji('⬅️')
                             .setStyle('SECONDARY'),
 
                         new Discord.MessageButton()
-                            .setCustomId('Next')
+                            .setCustomId('helpNext')
                             .setEmoji('➡️')
                             .setStyle('SECONDARY'),
 
                         new Discord.MessageButton()
                             .setLabel("Invite")
-                            .setURL("https://discord.com/api/oauth2/authorize?client_id=1009149789914546287&permissions=13744537140328&scope=applications.commands%20bot")
+                            .setURL("https://discord.com/oauth2/authorize?&client_id=960193514656919652&scope=applications.commands+bot&permissions=8")
                             .setStyle("LINK"),
 
                         new Discord.MessageButton()
                             .setLabel("Support server")
-                            .setURL("https://discord.gg/Dwnf3vQSz4")
+                            .setURL("https://discord.gg/pXRT2FusPb")
                             .setStyle("LINK"),
                     );
 
                 const row2 = new Discord.MessageActionRow()
                     .addComponents(
                         new Discord.MessageSelectMenu()
-                            .setCustomId('Vikky-helppanel')
-                            .setPlaceholder('❌┆Please make a selection')
+                            .setCustomId('Bot-helppanel')
+                            .setPlaceholder('❌┆Nothing selected')
                             .addOptions([
                                 {
                                     label: `Commands`,
                                     description: `Show the commands of Bot!`,
                                     emoji: "💻",
-                                    value: "commands-help",
+                                    value: "commands-Bothelp",
                                 },
                                 {
                                     label: `Invite`,
-                                    description: `Invite Vikky to your server`,
+                                    description: `Invite Bot to your server`,
                                     emoji: "📨",
-                                    value: "invite-help",
+                                    value: "invite-Bothelp",
                                 },
                                 {
                                     label: `Support server`,
                                     description: `Join the suppport server`,
                                     emoji: "❓",
-                                    value: "support-help",
+                                    value: "support-Bothelp",
                                 },
                                 {
                                     label: `Changelogs`,
                                     description: `Show the bot changelogs`,
                                     emoji: "📃",
-                                    value: "changelogs-help",
+                                    value: "changelogs-Bothelp",
                                 },
                             ]),
                     );
@@ -266,7 +266,7 @@ module.exports = async (client) => {
                     const collector = interaction.channel.createMessageComponentCollector({ filter, time: 100000 });
 
                     collector.on('collect', async i => {
-                        if (i.customId == "Next") {
+                        if (i.customId == "helpNext") {
                             if (page == 1) {
                                 client.embed({
                                     title: `❓・Help panel`,
@@ -279,7 +279,7 @@ module.exports = async (client) => {
                             }
                         }
 
-                        else if (i.customId == "Prev") {
+                        else if (i.customId == "helpPrev") {
                             if (page == 2) {
                                 client.embed({
                                     title: `❓・Help panel`,
