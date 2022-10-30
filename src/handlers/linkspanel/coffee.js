@@ -12,7 +12,7 @@ module.exports = async (client) => {
                     .addComponents(
                         new Discord.MessageSelectMenu()
                             .setCustomId('Bot-linkspanel')
-                            .setPlaceholder('❌┆Nothing selected')
+                            .setPlaceholder('🍥┆Please make a selection')
                             .addOptions([
                                 {
                                     label: `Support server`,
@@ -27,10 +27,10 @@ module.exports = async (client) => {
                                     value: "invite-linkspanel",
                                 },
                                 {
-                                    label: `Invite Bot 2`,
-                                    description: `Invite Bot 2 to your server`,
-                                    emoji: "📕",
-                                    value: "invite2-linkspanel",
+                                    label: `Support Vikky`,
+                                    description: `Share your love, buy me a coffee`,
+                                    emoji: "🧞‍♂️",
+                                    value: "coffee-linkspanel",
                                 },
                                 {
                                     label: `Community Server`,
@@ -50,16 +50,16 @@ module.exports = async (client) => {
                 let row = new Discord.MessageActionRow()
                     .addComponents(
                         new Discord.MessageButton()
-                            .setLabel("Bot Invite")
-                            .setURL(client.config.discord.botInvite)
+                            .setLabel("Buy me a coffee")
+                            .setURL("https://ko-fi.com/vikbot")
                             .setStyle("LINK"),
                     );
 
                 client.embed({
-                    title: `📨・Bot Invite`,
-                    desc: `Make your server even better with Bot!`,
+                    title: `🧞‍♂️・Support Vikky`,
+                    desc: `Share your love, buy me a coffee`,
                     image: "https://cdn.discordapp.com/attachments/843487478881976381/874694194474668052/Bot_banner_invite.jpg",
-                    url: client.config.discord.serverInvite,
+                    url: "https://ko-fi.com/vikbot",
                     components: [row2, row],
                     type: 'edit'
                 }, interaction.message)

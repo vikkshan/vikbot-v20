@@ -12,7 +12,7 @@ module.exports = async (client) => {
                     .addComponents(
                         new Discord.MessageSelectMenu()
                             .setCustomId('Bot-linkspanel')
-                            .setPlaceholder('❌┆Nothing selected')
+                            .setPlaceholder('🍥┆Please make a selection')
                             .addOptions([
                                 {
                                     label: `Support server`,
