@@ -20,10 +20,10 @@ module.exports = async (client, interaction, args) => {
                         value: "invite-linkspanel",
                     },
                     {
-                        label: `Invite Bot 2`,
-                        description: `Invite Bot 2 to your server`,
-                        emoji: "📕",
-                        value: "invite2-linkspanel",
+                        label: `Support Viky`,
+                        description: `Buy me a coffee!`,
+                        emoji: "☕️",
+                        value: "kofi-linkspanel",
                     },
                     {
                         label: `Community Server`,
