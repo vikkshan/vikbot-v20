@@ -4,7 +4,7 @@ module.exports = async (client, interaction, args) => {
     const row = new Discord.MessageActionRow()
         .addComponents(
             new Discord.MessageSelectMenu()
-                .setCustomId('Bot-linkspanel')
+                .setCustomId('Vikky-linkspanel')
                 .setPlaceholder('🍥┆Make a selection')
                 .addOptions([
                     {
@@ -20,10 +20,10 @@ module.exports = async (client, interaction, args) => {
                         value: "invite-linkspanel",
                     },
                     {
-                        label: `Invite Bot 2`,
-                        description: `Invite Bot 2 to your server`,
+                        label: `Vote Vikky`,
+                        description: `Vote Vikky on Top.gg`,
                         emoji: "📕",
-                        value: "invite2-linkspanel",
+                        value: "vote-linkspanel",
                     },
                     {
                         label: `Community Server`,
