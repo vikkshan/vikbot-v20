@@ -22,8 +22,8 @@ module.exports = async (client, interaction, args) => {
                     {
                         label: `Support Vikky`,
                         description: `Share your love, buy me a coffee`,
-                        emoji: "📕",
-                        value: "invite2-linkspanel",
+                        emoji: "🧞‍♂️",
+                        value: "coffee-linkspanel",
                     },
                     {
                         label: `Community Server`,
